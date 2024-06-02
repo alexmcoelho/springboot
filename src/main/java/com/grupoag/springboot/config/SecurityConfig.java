@@ -38,9 +38,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
 //                csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                http.authorizeRequests()
-                .antMatchers("/animes/admin/**").hasAnyRole("ADMIN")
-                .antMatchers("/animes/**").hasRole("USER");
 
                 for (ConfigPaths configMock : configPathsService.generateMatchers()) {
                     http.authorizeRequests()
