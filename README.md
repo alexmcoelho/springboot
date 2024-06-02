@@ -1,4 +1,4 @@
-# Spring Boot
+# Como usar
 
 Foi utilizado o docker para usar a aplicação localmente. Comando para subir um container com o MySQL:
 
